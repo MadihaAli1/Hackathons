@@ -1,7 +1,7 @@
 /* General Styling */
 body {
   font-family: "Arial", sans-serif;
-  background-color: #a4b1bb;
+  background-color: #a1b4c3;
   margin: 0;
   padding: 150px;
 }
@@ -9,7 +9,7 @@ body {
 .resume-container {
   display: flex;
   background-color: #45a29e;
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -79,3 +79,73 @@ button {
 button:hover {
   background-color: #536275;
 }
+
+/* Media Query for tablets (768px or less)*/
+@media (max-width: 768px) {
+  body {
+    padding: 50px;
+  }
+
+  .resume-container {
+    flex-direction: column;
+    width: 90%;
+    padding: 0;
+  }
+
+  .left-section {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #66fcf1;
+    padding-bottom: 20px;
+  }
+
+  .right-section {
+    width: 100%;
+  }
+
+  .profile-picture {
+    width: 120px;
+    height: 120px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
+
+/* Media Query for mobile devices (480px or less) */
+@media (max-width: 480px) {
+  body {
+    padding: 20px;
+  }
+
+  .resume-container {
+    width: 100%;
+    padding: 40px;
+  }
+
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 12px;
+  }
+} 

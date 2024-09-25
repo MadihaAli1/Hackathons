@@ -8,4 +8,3 @@ toggleButton.addEventListener("click", () => {
     skills.style.display = "none";
   }
 });
-
